@@ -252,6 +252,9 @@ local NUM_COLUMNS				:number = 5;
 local TEAM_ICON_SIZE			:number = 38;
 local TEAM_ICON_PREFIX			:string = "ICON_TEAM_ICON_";
 
+--Anonymous
+local g_Anon = GameConfiguration.GetValue('GAMEMODE_ANONYMOUS')
+print("g_Anon", g_Anon)
 
 -------------------------------------------------
 -- Localized Constants
@@ -260,6 +263,7 @@ local LOC_FRIENDS:string = Locale.ToUpper(Locale.Lookup("LOC_MULTIPLAYER_FRIENDS
 local LOC_GAME_SETUP:string = Locale.Lookup("LOC_MULTIPLAYER_GAME_SETUP");
 local LOC_GAME_SUMMARY:string = Locale.Lookup("LOC_MULTIPLAYER_GAME_SUMMARY");
 local LOC_STAGING_ROOM:string = Locale.ToUpper(Locale.Lookup("LOC_MULTIPLAYER_STAGING_ROOM"));
+
 
 
 -- ===========================================================================
@@ -4055,6 +4059,7 @@ end
 -------------------------------------------------
 function OnMultiplayerChat( fromPlayer, toPlayer, text, eTargetType )
 	-- .mph_ui_modversion_mphcommence_BBS_bbsyes_BBG_bbgpum
+	local b_ishost = false
 	local localID = Network.GetLocalPlayerID()
 	local hostID = Network.GetGameHostPlayerID()
 	local bversion_display = true
@@ -5583,12 +5588,12 @@ function UpdatePlayerEntry(playerID)
 		local statusText:string = "";
 		if slotStatus == SlotStatus.SS_TAKEN then
 			local hostID:number = Network.GetGameHostPlayerID();
-			statusText = Locale.Lookup(playerID == hostID and "LOC_SLOTLABEL_HOST" or "LOC_SLOTLABEL_PLAYER");
+			statusText = Locale.Lookup(playerID == hostID and g_Anon == false and "LOC_SLOTLABEL_HOST" or "LOC_SLOTLABEL_PLAYER");
 		elseif slotStatus == SlotStatus.SS_COMPUTER then
 			statusText = Locale.Lookup("LOC_SLOTLABEL_COMPUTER");
 		elseif slotStatus == SlotStatus.SS_OBSERVER then
 			local hostID:number = Network.GetGameHostPlayerID();
-			statusText = Locale.Lookup(playerID == hostID and "LOC_SLOTLABEL_OBSERVER_HOST" or "LOC_SLOTLABEL_OBSERVER");
+			statusText = Locale.Lookup(playerID == hostID and g_Anon == false and "LOC_SLOTLABEL_OBSERVER_HOST" or "LOC_SLOTLABEL_OBSERVER");
 		end
 		
 		playerEntry.PlayerStatus:SetText(statusText);
@@ -6499,6 +6504,8 @@ end
 -------------------------------------------------
 function OnShow()
 	-- Fetch g_currentMaxPlayers because it might be stale due to loading a save.
+	g_Anon = GameConfiguration.GetValue('GAMEMODE_ANONYMOUS')
+	print("g_Anon", g_Anon)
 	g_currentMaxPlayers = math.min(MapConfiguration.GetMaxMajorPlayers(), 50);
 	m_shownPBCReadyPopup = false;
 	m_exitReadyWait = false;
@@ -7466,6 +7473,9 @@ function Initialize()
 end
 
 Initialize();
+
+
+
 
 
 
