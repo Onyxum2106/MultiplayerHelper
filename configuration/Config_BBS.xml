@@ -8,7 +8,9 @@
 		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="3" TargetGroup="Map" TargetId="BBSRidge" TargetValue="1" Hash="0" />
 		<!--  CPL Premier League Defaulting  -->
 		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="4" TargetGroup="Map" TargetId="BBSRidge" TargetValue="1" Hash="0" />
-		<!-- 2vi2 Defaulting -->
+		<!--1v1 RR Defaulting-->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="5" TargetGroup="Map" TargetId="BBSRidge" TargetValue="1" Hash="0" />
+		<!-- 2v2 Defaulting -->
 		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="6" TargetGroup="Map" TargetId="BBSRidge" TargetValue="2" Hash="0" />
 	</ConfigurationUpdates>
 </GameInfo>

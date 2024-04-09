@@ -855,12 +855,18 @@ function FFA_CivFr_Natural_Wonders()
 	GameConfiguration.SetValue("EXCLUDE_NATURAL_WONDERS",default)
 end
 
+function OneVOneRR_Natural_Wonders()
+	local default = {}
+	default = {
+				"FEATURE_BERMUDA_TRIANGLE"
+				}
+	GameConfiguration.SetValue("EXCLUDE_NATURAL_WONDERS",default)
+end
+
 function Premier_League_Natural_Wonders()
 	local default = {}
 	default = {
-
-              "FEATURE_BERMUDA_TRIANGLE"
-		
+            "FEATURE_BERMUDA_TRIANGLE"
 						}
 	GameConfiguration.SetValue("EXCLUDE_NATURAL_WONDERS",default)
 end
@@ -945,6 +951,16 @@ function TwoVITwo_Natural_Wonders()
 	GameConfiguration.SetValue("EXCLUDE_NATURAL_WONDERS",default)
 end	
 
+function OneVOneRR_CS()
+		local default = {}
+		default ={
+				"CIVILIZATION_KUMASI",
+				"CIVILIZATION_LA_VENTA",
+				"CIVILIZATION_VATICAN_CITY"
+				}
+		GameConfiguration.SetValue("EXCLUDE_CITY_STATES",default)
+end
+
 function TwoVITwo_CS()
 	local default = {}
 	default ={
@@ -998,6 +1014,12 @@ function CheckPreset()
 		if currentPreset == 4 then
 			print("Applied Premier Settings")
 			Premier_League_Natural_Wonders()
+		end
+		-- 1vi1 preset
+		if currentPreset == 5 then
+			print("Applied 1vi1 Settings")
+			OneVOneRR_Natural_Wonders()
+			OneVOneRR_CS()
 		end
 		-- 2vi2 preset
 		if currentPreset == 6 then
