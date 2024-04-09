@@ -874,8 +874,8 @@
         <Replace Tag="MPH_PRESET_CPLSQUADRON_NAME" Language="zh_Hans_CN">
             <Text>CPL Premier League 超级联赛</Text>
         </Replace>
-        <Replace Tag="MPH_PRESET_PHYPHY_NAME" Language="zh_Hans_CN">
-            <Text>1v1 闪电战</Text>
+        <Replace Tag="MPH_PRESET_1v1RR" Language="zh_Hans_CN">
+            <Text>1v1皇家混战</Text>
         </Replace>
 		<Replace Tag="MPH_PRESET_NONE_DESC" Language="zh_Hans_CN">
             <Text>默认设置</Text>
@@ -889,8 +889,8 @@
         <Replace Tag="MPH_PRESET_CIVFRTEAMER_DESC" Language="zh_Hans_CN">
             <Text>CivFR组队战常用设置。</Text>
         </Replace>
-        <Replace Tag="MPH_PRESET_PHYPHY_DESC" Language="zh_Hans_CN">
-            <Text>UwU的游戏但是回合时间并不UwU。</Text>
+        <Replace Tag="MPH_PRESET_1v1RR_DESC" Language="zh_Hans_CN">
+            <Text>1v1皇家混战的专用礼物。</Text>
         </Replace>
         <Replace Tag="MPH_OFFICIAL_GAME_NAME" Language="zh_Hans_CN">
             <Text>[COLOR_RED]正式比赛[ENDCOLOR]</Text>

@@ -884,8 +884,8 @@
         <Replace Tag="MPH_PRESET_CPLSQUADRON_DESC" language="ru_RU">
             <Text>Игра Premier League 4 на 4 с драфтом</Text>
         </Replace>
-        <Replace Tag="MPH_PRESET_PHYPHY_NAME" Language="ru_RU">
-            <Text>Блиц 1 на 1</Text>
+        <Replace Tag="MPH_PRESET_1v1RR_NAME" Language="ru_RU">
+            <Text>1v1 королевская борьба</Text>
         </Replace>
 		<Replace Tag="MPH_PRESET_NONE_DESC" Language="ru_RU">
             <Text>Стандартные настройки</Text>
@@ -899,8 +899,8 @@
         <Replace Tag="MPH_PRESET_CIVFRTEAMER_DESC" Language="ru_RU">
             <Text>Типичные настройки командных игр в сообществе CivFR</Text>
         </Replace>
-        <Replace Tag="MPH_PRESET_PHYPHY_DESC" Language="ru_RU">
-            <Text>Суслерская дуэль на звание самой быстрой руки на Диком Западе</Text>
+        <Replace Tag="MPH_PRESET_1v1RR_DESC" Language="ru_RU">
+            <Text>посвященный подарок для 1v1 королевской борьбы</Text>
         </Replace>
         <Replace Tag="MPH_OFFICIAL_GAME_NAME" Language="ru_RU">
             <Text>[COLOR_RED]Официальная турнирная игра[ENDCOLOR]</Text>

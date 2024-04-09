@@ -874,8 +874,8 @@
 		<Replace Tag="MPH_PRESET_CPLSQUADRON_NAME" Language="pt_BR">
 			<Text>Liga Premier CPL</Text>
 		</Replace>
-		<Replace Tag="MPH_PRESET_PHYPHY_NAME" Language="pt_BR">
-			<Text>1v1 Blitz</Text>
+		<Replace Tag="MPH_PRESET_1v1RR_NAME" Language="pt_BR">
+			<Text>Royal Rumble 1v1</Text>
 		</Replace>
 		<Replace Tag="MPH_PRESET_NONE_DESC" Language="pt_BR">
 			<Text>Configurações padrão</Text>
@@ -889,8 +889,8 @@
 		<Replace Tag="MPH_PRESET_CIVFRTEAMER_DESC" Language="pt_BR">
 			<Text>Configurações típicas de um time CivFR (recursos abundantes)</Text>
 		</Replace>
-		<Replace Tag="MPH_PRESET_PHYPHY_DESC" Language="pt_BR">
-			<Text>Jogos UwU, mas sem cronômetro UwU</Text>
+		<Replace Tag="MPH_PRESET_1v1_RR_NAME" Language="pt_BR">
+			<Text>presente dedicado para o royal rumble 1v1</Text>
 		</Replace>
 		<Replace Tag="MPH_OFFICIAL_GAME_NAME" Language="pt_BR">
 			<Text>[COLOR_RED]Jogo Oficial do Torneio[ENDCOLOR]</Text>

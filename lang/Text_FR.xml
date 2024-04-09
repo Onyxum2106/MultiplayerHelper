@@ -875,8 +875,8 @@
         <Replace Tag="MPH_PRESET_CPLSQUADRON_NAME" Language="fr_FR">
             <Text>CPL Premier League</Text>
         </Replace>
-        <Replace Tag="MPH_PRESET_PHYPHY_NAME" Language="fr_FR">
-            <Text>1v1 Blitz</Text>
+        <Replace Tag="MPH_PRESET_1v1RR" Language="fr_FR">
+            <Text>Royal Rumble en 1 contre 1</Text>
         </Replace>
 		<Replace Tag="MPH_PRESET_NONE_DESC" Language="fr_FR">
             <Text>Paramètres par défaut</Text>
@@ -890,8 +890,8 @@
         <Replace Tag="MPH_PRESET_CIVFRTEAMER_DESC" Language="fr_FR">
             <Text>Paramètres typiques d'un teamer CivFR (ressources abondantes)</Text>
         </Replace>
-        <Replace Tag="MPH_PRESET_PHYPHY_DESC" Language="fr_FR">
-            <Text>UwU Games but Timer not UwU</Text>
+        <Replace Tag="MPH_PRESET_1v1RR_DESC" Language="fr_FR">
+            <Text>cadeau dédié pour un royal rumble en 1 contre 1</Text>
         </Replace>
         <Replace Tag="MPH_OFFICIAL_GAME_NAME" Language="fr_FR">
             <Text>[COLOR_RED]Game officielle de tournoi[ENDCOLOR]</Text>
