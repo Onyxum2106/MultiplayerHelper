@@ -9,7 +9,6 @@
         <Replace Tag="LOC_MAP_RICH_HIGHLANDS_DESCRIPTION" language="fr_FR">
             <Text>Plateaux, avec plus de resources</Text>
         </Replace>
-		-->
         <Replace Tag="LOC_MPH_TURN_IS_PROCESSED" language="fr_FR">
             <Text>LE TOUR ACTUEL EST EN COURS DE TRAITEMENT, VEUILLEZ PATIENTER</Text>
         </Replace>
