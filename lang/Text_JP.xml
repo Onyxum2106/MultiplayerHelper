@@ -877,8 +877,8 @@
         <Replace Tag="MPH_PRESET_CPLSQUADRON_DESC" language="ja_JP">
             <Text>Premier League 4v4 with drafting</Text>
         </Replace>
-        <Replace Tag="MPH_PRESET_PHYPHY_NAME" Language="ja_JP">
-            <Text>1v1 Blitz</Text>
+        <Replace Tag="MPH_PRESET_1v1RR_NAME" Language="ja_JP">
+            <Text>を日本語に翻訳すると、"1対1 ロイヤルランブル" です。</Text>
         </Replace>
 		<Replace Tag="MPH_PRESET_NONE_DESC" Language="ja_JP">
             <Text>Default Settings</Text>
@@ -892,8 +892,8 @@
         <Replace Tag="MPH_PRESET_CIVFRTEAMER_DESC" Language="ja_JP">
             <Text>CivFR typical settings for teamers</Text>
         </Replace>
-        <Replace Tag="MPH_PRESET_PHYPHY_DESC" Language="ja_JP">
-            <Text>UwU Games but Timer not UwU</Text>
+        <Replace Tag="MPH_PRESET_1v1RR_DESC" Language="ja_JP">
+            <Text>1v1 Royal Rumble"にふさわしい特別なプレゼントをお探しですね</Text>
         </Replace>
         <Replace Tag="MPH_OFFICIAL_GAME_NAME" Language="ja_JP">
             <Text>[COLOR_RED]Official tournament game[ENDCOLOR]</Text>
