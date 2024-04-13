@@ -955,7 +955,7 @@ function OneVOneRR_CS()
 		local default = {}
 		default ={
 				"CIVILIZATION_KUMASI",
-				"CIVILIZATION_LA_VENTA",
+				"CIVILIZATION_LAHORE",
 				"CIVILIZATION_VATICAN_CITY"
 				}
 		GameConfiguration.SetValue("EXCLUDE_CITY_STATES",default)
