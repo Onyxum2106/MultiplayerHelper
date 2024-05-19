@@ -916,5 +916,11 @@
         <Row Tag="MPH_PRESET_CIVFRFFA_DESC" Language="zh_Hans_CN">
             <Text>CivFR混战常用设置。</Text>
         </Row>
+        <Row Tag="MPH_PRESET_CHINESE_LEAGUE_CUP_NAME" Language="zh_Hans_CN">
+            <Text>CLC 中国联赛杯 (国人杯)</Text>
+        </Row>
+        <Row Tag="MPH_PRESET_CHINESE_LEAGUE_CUP_DESC" Language="zh_Hans_CN">
+            <Text>国人杯常用设置</Text>
+        </Row>
     </LocalizedText>
 </GameData>
