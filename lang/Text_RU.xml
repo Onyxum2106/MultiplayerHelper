@@ -921,5 +921,11 @@
         <Row Tag="MPH_PRESET_CIVFRFFA_DESC" Language="ru_RU">
             <Text>Типичные настройки FFA игр в сообществе CivFR</Text>
         </Row>
+        <Row Tag="MPH_PRESET_CHINESE_LEAGUE_CUP_NAME" Language="ru_RU">
+            <Text>CLC Кубок Китайской Лиги</Text>
+        </Row>
+        <Row Tag="MPH_PRESET_CHINESE_LEAGUE_CUP_DESC" Language="ru_RU">
+            <Text>Типичные настройки Кубка Китайской Лиги</Text>
+        </Row>
     </LocalizedText>
 </GameData>

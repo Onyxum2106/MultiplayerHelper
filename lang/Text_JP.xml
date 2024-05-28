@@ -919,5 +919,11 @@
         <Row Tag="MPH_PRESET_CIVFRFFA_DESC" Language="ja_JP">
             <Text>CivFR typical settings for FFA.</Text>
         </Row>
+        <Row Tag="MPH_PRESET_CHINESE_LEAGUE_CUP_NAME" Language="ja_JP">
+            <Text>CLC 中国リーグカップ</Text>
+        </Row>
+        <Row Tag="MPH_PRESET_CHINESE_LEAGUE_CUP_DESC" Language="ja_JP">
+            <Text>中国リーグカップの典型的な設定</Text>
+        </Row>
     </LocalizedText>
 </GameData>

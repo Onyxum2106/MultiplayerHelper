@@ -913,5 +913,11 @@
 		<Replace Tag="MPH_PRESET_CPLSQUADRON_DESC" Language="pt_BR">
 			<Text>Predefinição para jogos da Liga CPL.</Text>
 		</Replace>
+		<Row Tag="MPH_PRESET_CHINESE_LEAGUE_CUP_NAME" Language="pt_BR">
+            <Text>CLC Copa da Liga Chinesa</Text>
+        </Row>
+        <Row Tag="MPH_PRESET_CHINESE_LEAGUE_CUP_DESC" Language="pt_BR">
+            <Text>Configurações típicas da Copa da Liga Chinesa</Text>
+        </Row>
     </LocalizedText>
 </GameData>

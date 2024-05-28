@@ -777,5 +777,11 @@
 		<Row Tag="MPH_PRESET_CIVFRFFA_DESC" Language="ko_KR">
 			<Text>FFA를 위한 CivFR 전형적인 설정</Text>
 		</Row>
+		<Row Tag="MPH_PRESET_CHINESE_LEAGUE_CUP_NAME" Language="ko_KR">
+            <Text>CLC 중국 리그컵</Text>
+        </Row>
+        <Row Tag="MPH_PRESET_CHINESE_LEAGUE_CUP_DESC" Language="ko_KR">
+            <Text>중국 리그컵의 전형적인 설정</Text>
+        </Row>
 	</LocalizedText>
 </GameData>
