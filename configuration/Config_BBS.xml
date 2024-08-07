@@ -10,9 +10,10 @@
 		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="4" TargetGroup="Map" TargetId="BBSRidge" TargetValue="1" Hash="0" />
 		<!--1v1 RR Defaulting-->
 		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="5" TargetGroup="Map" TargetId="BBSRidge" TargetValue="1" Hash="0" />
-		<!-- 2v2 Defaulting -->
-		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="6" TargetGroup="Map" TargetId="BBSRidge" TargetValue="2" Hash="0" />
 		<!-- Chinese League Cup Defaulting -->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="7" TargetGroup="Map" TargetId="BBSRidge" TargetValue="0" Hash="0" />
+		<!-- PPL Arena Defaulting -->
 		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="8" TargetGroup="Map" TargetId="BBSRidge" TargetValue="0" Hash="0" />
-	</ConfigurationUpdates>
+		<!--PPL Battleground Defaulting-->
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="9" TargetGroup="Map" TargetId="BBSRidge" TargetValue="0" Hash="0" />
 </GameInfo>

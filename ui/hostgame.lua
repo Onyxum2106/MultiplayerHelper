@@ -901,83 +901,97 @@ function CWC_Natural_Wonders()
 	GameConfiguration.SetValue("EXCLUDE_NATURAL_WONDERS",default)
 end
 
-function TwoVITwo_Natural_Wonders()
+function PPLArena_Natural_Wonders()
 	local default = {}
-	default = {	
-				"FEATURE_GIBRALTAR",
-				"FEATURE_TORRES_DEL_PAINE",
-				"FEATURE_GRAND_MESA",
-				"FEATURE_GIANTS_CAUSEWAY",
-				"FEATURE_DALLOL",
-				"FEATURE_EYJAFJALLAJOKULL",
-				"FEATURE_GOBUSTAN",
-				"FEATURE_OUNIANGA",
-				"FEATURE_CERRO_DE_POTOSI",
-				"FEATURE_ZHANGYE_DANXIA",
-				"FEATURE_HA_LONG_BAY",
-				"FEATURE_BERMUDA_TRIANGLE",
-				"FEATURE_VREDEFORT_DOME",
-				"FEATURE_RORAIMA",
-				"FEATURE_SINAI",
-				"FEATURE_BARRINGER_CRATER",
-				"FEATURE_MOSI_OA_TUNYA",
-				"FEATURE_VESUVIUS",
-				"FEATURE_MOTLATSE_CANYON",
-				"FEATURE_MATTERHORN",
-				"FEATURE_ULURU",
-				"FEATURE_SRI_PADA",
-				"FEATURE_LYSEFJORDEN",
-				"FEATURE_WULINGYUAN",
-				"FEATURE_CLIFFS_DOVER",
-				"FEATURE_GALAPAGOS",
-				"FEATURE_KILIMANJARO",
-				"FEATURE_OLD_FAITHFUL",
-				"FEATURE_EVEREST",
-				"FEATURE_SALAR_DE_UYUNI",
-				"FEATURE_PIOPIOTAHI",
-				"FEATURE_KRAKATOA",
-				"FEATURE_PAITITI",
-				"FEATURE_CHOCOLATEHILLS",
-				"FEATURE_NAMIB",
-				"FEATURE_KAILASH",
-				"FEATURE_LAKE_VICTORIA",
-				"FEATURE_TSINGY",
-				"FEATURE_DELICATE_ARCH",
+	default = {
+        "FEATURE_BARRINGER_CRATER",
 				"FEATURE_BIOLUMINESCENT_BAY",
-				"FEATURE_YOSEMITE",
+				"FEATURE_CERRO_DE_POTOSI",
+				"FEATURE_DALLOL",
+				"FEATURE_GRAND_MESA",
+				"FEATURE_KRAKATOA",
+				"FEATURE_LAKE_VICTORIA",
 				"FEATURE_LENCOIS_MARANHENSES",
-				"FEATURE_DEVILSTOWER"
+				"FEATURE_OUNIANGA",
+				"FEATURE_MOSI_OA_TUNYA",
+				"FEATURE_MOTLATSE_CANYON",
+				"FEATURE_KAILASH",
+				"FEATURE_NAMIB",
+				"FEATURE_OLD_FAITHFUL",
+				"FEATURE_SINAI",
+				"FEATURE_SALAR_DE_UYUNI",
+				"FEATURE_WULINGYUAN",
+				"FEATURE_SALAR_DE_UYUNI",
+				"FEATURE_SRI_PADA",
+				"FEATURE_GIBRALTAR",
+				"FEATURE_VREDEFORT_DOME",
+				"FEATURE_LYSEFJORDEN",
+				"FEATURE_CHOCOLATEHILLS",
+				"FEATURE_BERMUDA_TRIANGLE"
 				}
 	GameConfiguration.SetValue("EXCLUDE_NATURAL_WONDERS",default)
-end	
-
-function OneVOneRR_CS()
-		local default = {}
-		default ={
-				"CIVILIZATION_KUMASI",
-				"CIVILIZATION_LAHORE",
-				"CIVILIZATION_VATICAN_CITY"
-				}
-		GameConfiguration.SetValue("EXCLUDE_CITY_STATES",default)
 end
 
-function TwoVITwo_CS()
+function PPLBattleground_Natural_Wonders()
+	local default = {}
+	default = {
+        "FEATURE_BARRINGER_CRATER",
+				"FEATURE_BIOLUMINESCENT_BAY",
+				"FEATURE_CERRO_DE_POTOSI",
+				"FEATURE_DALLOL",
+				"FEATURE_GRAND_MESA",
+				"FEATURE_KRAKATOA",
+				"FEATURE_LAKE_VICTORIA",
+				"FEATURE_LENCOIS_MARANHENSES",
+				"FEATURE_OUNIANGA",
+				"FEATURE_MOSI_OA_TUNYA",
+				"FEATURE_MOTLATSE_CANYON",
+				"FEATURE_KAILASH",
+				"FEATURE_NAMIB",
+				"FEATURE_OLD_FAITHFUL",
+				"FEATURE_SINAI",
+				"FEATURE_SALAR_DE_UYUNI",
+				"FEATURE_WULINGYUAN",
+				"FEATURE_SALAR_DE_UYUNI",
+				"FEATURE_SRI_PADA",
+				"FEATURE_GIBRALTAR",
+				"FEATURE_VREDEFORT_DOME",
+				"FEATURE_LYSEFJORDEN",
+				"FEATURE_MATTERHORN",
+				"FEATURE_BERMUDA_TRIANGLE"
+				}
+	GameConfiguration.SetValue("EXCLUDE_NATURAL_WONDERS",default)
+end
+
+function OneVOneRR_CS()
 	local default = {}
 	default ={
-				"CIVILIZATION_KABUL", 
+			"CIVILIZATION_KUMASI",
+			"CIVILIZATION_LAHORE",
+			"CIVILIZATION_VATICAN_CITY"
+			}
+	GameConfiguration.SetValue("EXCLUDE_CITY_STATES",default)
+end
+
+function PPLArena_CS()
+	local default = {}
+	default ={
+				"CIVILIZATION_KUMASI", 
 				"CIVILIZATION_JOHANNESBURG",
-				"CIVILIZATION_CHINGUETTI",
-				"CIVILIZATION_ANTANANARIVO",
-				"CIVILIZATION_ZANZIBAR",
-				"CIVILIZATION_BOLOGNA",
-				"CIVILIZATION_AUCKLAND",
-				"CIVILIZATION_BABYLON",
-				"CIVILIZATION_AYUTTHAYA",
-				"CIVILIZATION_NGAZARGAMU",
-				"CIVILIZATION_NAN_MADOL"		
+				"CIVILIZATION_ZANZIBAR"		
 				}
 	GameConfiguration.SetValue("EXCLUDE_CITY_STATES",default)
-end		
+end
+
+function PPLBattleground_CS()
+	local default = {}
+	default ={
+				"CIVILIZATION_KUMASI", 
+				"CIVILIZATION_JOHANNESBUR",
+				"CIVILIZATION_ZANZIBAR"		
+				}
+	GameConfiguration.SetValue("EXCLUDE_CITY_STATES",default)
+end
 
 function CheckPreset()
 	local currentPreset = GameConfiguration.GetValue("MPH_PRESET")
@@ -1015,24 +1029,24 @@ function CheckPreset()
 			print("Applied Premier Settings")
 			Premier_League_Natural_Wonders()
 		end
-		-- 1vi1 preset
+		-- OneVOneRR
 		if currentPreset == 5 then
 			print("Applied 1vi1 Settings")
 			OneVOneRR_Natural_Wonders()
 			OneVOneRR_CS()
 		end
-		-- 2vi2 preset
-		if currentPreset == 6 then
-			print("Applied 2vi2 Settings")
-			TwoVITwo_Natural_Wonders()
-			TwoVITwo_CS()
-			GameConfiguration.SetValue("CITY_STATE_COUNT",4)
-		end
 		-- FFA CivFr
-		if currentPreset == 7 then
+		if currentPreset == 6 then
 			print("Applied Squadron Settings")
 			FFA_CivFr_Natural_Wonders()
-		end	
+		end
+		-- PPL Arena
+		if currentPreset == 8 then
+			print("Applied PPL Arena Settings")
+			PPLArena_Natural_Wonders()
+			PPLArena_CS()
+			GameConfiguration.SetValue("CITY_STATE_COUNT",3)
+		end			
 		Network.BroadcastGameConfig();	
 		OnUpdateUI()
 	end
