@@ -16,6 +16,7 @@ function OpenPausePanel()
 		g_timer = -1
 		UIManager:QueuePopup(ContextPtr, PopupPriority.PausePanel);	
 
+		ContextPtr:SetOffsetY(100)
 		Controls.PopupAlphaIn:SetToBeginning();
 		Controls.PopupAlphaIn:Play();
 		Controls.PopupSlideIn:SetToBeginning();
