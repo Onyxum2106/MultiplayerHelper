@@ -81,7 +81,7 @@ end
 function OnCountdownPauseInit()
 	Controls.CountdownTimerAnim:RegisterAnimCallback( OnUpdateTimers );	
 	g_timer = 1
-	g_fCountdownTimer = 10;
+	g_fCountdownTimer = 5;
 	g_fCountdownTickSoundTime = g_fCountdownTimer - 5; -- start countdown ticks in 5 secs.
 	g_fCountdownInitialTime = g_fCountdownTimer;
 	g_fCountdownReadyButtonTime = g_fCountdownTimer;
