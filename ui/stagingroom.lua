@@ -28,6 +28,7 @@ local CountdownTypes = {
 	Draft_LeaderBan 	= "Draft_LeaderBan",
 	Draft_LeaderPick 	= "Draft_LeaderPick",
 	Draft_ReadyStart 	= "Draft_ReadyStart",
+	Launch_BBG_Host     = "Launch_BBG_Host"
 };
 
 local TimerTypes = {
@@ -191,6 +192,7 @@ local g_CountdownData = {
 	[CountdownTypes.Draft_LeaderBan]	= { CountdownTime = 62,		TimerType = TimerTypes.Script,				TickStartTime = 12},
 	[CountdownTypes.Draft_LeaderPick]	= { CountdownTime = 62,		TimerType = TimerTypes.Script,				TickStartTime = 12},
 	[CountdownTypes.Draft_ReadyStart]	= { CountdownTime = 300,	TimerType = TimerTypes.Script,				TickStartTime = 10},
+	[CountdownTypes.Launch_BBG_Host]    = { CountdownTime = 5,      TimerType = TimerTypes.Script,              TickStartTime = 5},
 };
 
 -- hotseatOnly - Only available in hotseat mode.
@@ -365,7 +367,7 @@ function IsCloudInProgressAndNotTurn()
 end
 
 function IsLaunchCountdownActive()
-	if(m_countdownType == CountdownTypes.Launch or m_countdownType == CountdownTypes.Launch_Instant) then
+	if(m_countdownType == CountdownTypes.Launch or m_countdownType == CountdownTypes.Launch_Instant or m_countdownType == CountdownTypes.Launch_BBG_Host) then
 		return true;
 	end
 
@@ -6312,6 +6314,8 @@ function StartLaunchCountdown()
 		or GameConfiguration.IsMatchMaking()) then
 		-- Joining a PlayByCloud game already in progress has a much faster countdown to be less annoying.
 		StartCountdown(CountdownTypes.Launch_Instant);
+	elseif(Network.IsNetSessionHost()) then
+		StartCountdown(CountdownTypes.Launch_BBG_Host);
 	else
 		StartCountdown(CountdownTypes.Launch);
 	end
