@@ -27,8 +27,8 @@ local CountdownTypes = {
 	Draft_MapBan 		= "Draft_MapBan",
 	Draft_LeaderBan 	= "Draft_LeaderBan",
 	Draft_LeaderPick 	= "Draft_LeaderPick",
-	Draft_ReadyStart 	= "Draft_ReadyStart",
-	Launch_BBG_Host     = "Launch_BBG_Host"
+	Draft_ReadyStart 	= "Draft_ReadyStart"
+	--Launch_BBG_Host     = "Launch_BBG_Host"--
 };
 
 local TimerTypes = {
@@ -367,7 +367,7 @@ function IsCloudInProgressAndNotTurn()
 end
 
 function IsLaunchCountdownActive()
-	if(m_countdownType == CountdownTypes.Launch or m_countdownType == CountdownTypes.Launch_Instant or m_countdownType == CountdownTypes.Launch_BBG_Host) then
+	if(m_countdownType == CountdownTypes.Launch or m_countdownType == CountdownTypes.Launch_Instant) then
 		return true;
 	end
 
@@ -6314,8 +6314,6 @@ function StartLaunchCountdown()
 		or GameConfiguration.IsMatchMaking()) then
 		-- Joining a PlayByCloud game already in progress has a much faster countdown to be less annoying.
 		StartCountdown(CountdownTypes.Launch_Instant);
-	elseif(Network.IsNetSessionHost()) then
-		StartCountdown(CountdownTypes.Launch_BBG_Host);
 	else
 		StartCountdown(CountdownTypes.Launch);
 	end
