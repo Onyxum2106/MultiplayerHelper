@@ -28,7 +28,6 @@ local CountdownTypes = {
 	Draft_LeaderBan 	= "Draft_LeaderBan",
 	Draft_LeaderPick 	= "Draft_LeaderPick",
 	Draft_ReadyStart 	= "Draft_ReadyStart"
-	--Launch_BBG_Host     = "Launch_BBG_Host"--
 };
 
 local TimerTypes = {
