@@ -27,7 +27,7 @@ local CountdownTypes = {
 	Draft_MapBan 		= "Draft_MapBan",
 	Draft_LeaderBan 	= "Draft_LeaderBan",
 	Draft_LeaderPick 	= "Draft_LeaderPick",
-	Draft_ReadyStart 	= "Draft_ReadyStart"
+	Draft_ReadyStart 	= "Draft_ReadyStart",
 };
 
 local TimerTypes = {
@@ -191,8 +191,6 @@ local g_CountdownData = {
 	[CountdownTypes.Draft_LeaderBan]	= { CountdownTime = 62,		TimerType = TimerTypes.Script,				TickStartTime = 12},
 	[CountdownTypes.Draft_LeaderPick]	= { CountdownTime = 62,		TimerType = TimerTypes.Script,				TickStartTime = 12},
 	[CountdownTypes.Draft_ReadyStart]	= { CountdownTime = 300,	TimerType = TimerTypes.Script,				TickStartTime = 10},
-	[CountdownTypes.Launch_BBG_Host]    = { CountdownTime = 5,      TimerType = TimerTypes.Script,              TickStartTime = 5},
-};
 
 -- hotseatOnly - Only available in hotseat mode.
 -- hotseatInProgress = Available for active civs (AI/HUMAN) when loading a hotseat game
