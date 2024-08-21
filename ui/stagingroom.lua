@@ -807,6 +807,7 @@ function ResetStatus_SpecificID(playerID)
 				if b_bbm_game == true then
 					player.bbm_id = s_bbm_id
 					player.bbm_v = 0
+				end
 			end
 		end
 	end
