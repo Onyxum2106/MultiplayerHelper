@@ -917,7 +917,8 @@ function SendVersion()
 	if localID ~= hostID and b_mph_game == true then
 		local bbs_version = GetLocalModVersion(s_bbs_id)
 		local bbg_version = GetLocalModVersion(s_bbg_id)
-		Network.SendChat(".mph_ui_modversion_"..tostring(g_version).."_BBS_"..tostring(bbs_version).."_BBG_"..tostring(bbg_version),-2,hostID)
+		local bbm_version = GetLocalModVersion(s_bbm_id)
+		Network.SendChat(".mph_ui_modversion_"..tostring(g_version).."_BBS_"..tostring(bbs_version).."_BBG_"..tostring(bbg_version).."_BBM_"..tostring(bbm_version),-2,hostID)
 	end
 end
 
