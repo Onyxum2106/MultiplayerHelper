@@ -107,6 +107,8 @@ local b_mph_game = false;
 local b_spec_game = false;
 local b_bbg_game = false;
 local b_bbs_game = false;
+local b_bbm_game = false;
+local b_bbm_game = "";
 local s_bbs_id = "";
 local s_bbg_id = "";
 local b_mods_ok = false
@@ -602,6 +604,10 @@ function RefreshStatusID(playerID,version,bbs_version,bbg_version)
 							player.bbs_id = s_bbs_id
 							player.bbs_v = 0
 						end
+						if b_bbm_game == true then
+							player.bbm_id = s_bbm_id
+							player.bbm_v = 0
+						end
 						player.Name = PlayerConfigurations[playerID]:GetPlayerName()
 						fresh_id = false
 						if player.ID == hostID then
@@ -614,6 +620,10 @@ function RefreshStatusID(playerID,version,bbs_version,bbg_version)
 							if b_bbs_game == true then
 								player.bbs_id = s_bbs_id
 								player.bbs_v = versionBBS
+							end
+							if b_bbm_game == true then
+								player.bbm_id = s_bbm_id
+								player.bbm_v = versionBBM
 							end
 							fresh_id = false					
 						end
@@ -628,6 +638,10 @@ function RefreshStatusID(playerID,version,bbs_version,bbg_version)
 						if b_bbs_game == true then
 							player.bbs_id = s_bbs_id
 							player.bbs_v = 0
+						end
+						if b_bbm_game == true then
+							player.bbm_id = s_bbm_id
+							player.bbm_v = 0
 						end
 						fresh_id = false					
 					end
@@ -647,6 +661,10 @@ function RefreshStatusID(playerID,version,bbs_version,bbg_version)
 								tmp.bbs_id = s_bbs_id
 								tmp.bbs_v = versionBBS
 							end
+							if b_bbm_game == true then
+								tmp.bbm_id = s_bbm_id
+								tmp.bbm_v = versionBBM
+							end
 							table.insert(g_player_status, tmp)
 							else
 							local tmp = { ID = playerID, Status = 0, Version = 0, Name = PlayerConfigurations[playerID]:GetPlayerName()}
@@ -657,6 +675,10 @@ function RefreshStatusID(playerID,version,bbs_version,bbg_version)
 							if b_bbs_game == true then
 								tmp.bbs_id = s_bbs_id
 								tmp.bbs_v = 0
+							end
+							if b_bbm_game == true then
+								tmp.bbm_id = s_bbm_id
+								tmp.bbm_v = 0
 							end
 							table.insert(g_player_status, tmp)
 						end
@@ -672,6 +694,10 @@ function RefreshStatusID(playerID,version,bbs_version,bbg_version)
 					if b_bbs_game == true then
 						tmp.bbs_id = s_bbs_id
 						tmp.bbs_v = 0
+					end
+					if b_bbm_game == true then
+						tmp.bbm_id = s_bbm_id
+						tmp.bbm_v = 0
 					end
 					table.insert(g_player_status, tmp)
 				end
@@ -717,6 +743,10 @@ function ResetStatus()
 					tmp.bbs_id = s_bbs_id
 					tmp.bbs_v = 0
 				end
+				if b_bbm_game == true then
+					tmp.bbm_id = s_bbm_id
+					tmp.bbm_v = 0
+				end
 				table.insert(g_player_status, tmp)
 				else
 				local tmp = { ID = iPlayer, Status = 99, Version = g_version, Name = PlayerConfigurations[iPlayer]:GetPlayerName()}
@@ -727,6 +757,10 @@ function ResetStatus()
 				if b_bbs_game == true then
 					tmp.bbs_id = s_bbs_id
 					tmp.bbs_v = versionBBS
+				end
+				if b_bbm_game == true then
+					tmp.bbm_id = s_bbm_id
+					tmp.bbm_v = versionBBM
 				end
 				table.insert(g_player_status, tmp)					
 			end
@@ -739,6 +773,10 @@ function ResetStatus()
 				if b_bbs_game == true then
 					tmp.bbs_id = s_bbs_id
 					tmp.bbs_v = versionBBS
+				end
+				if b_bbm_game == true then
+					tmp.bbm_id = s_bbm_id
+					tmp.bbm_v = versionBBM
 				end
 			table.insert(g_player_status, tmp)				
 		end
@@ -766,6 +804,9 @@ function ResetStatus_SpecificID(playerID)
 					player.bbs_id = s_bbs_id
 					player.bbs_v = 0
 				end
+				if b_bbm_game == true then
+					player.bbm_id = s_bbm_id
+					player.bbm_v = 0
 			end
 		end
 	end
@@ -823,6 +864,10 @@ function RefreshStatus()
 						end
 						if b_bbg_game == true and tostring(player.bbg_v) ~= tostring(GetLocalModVersion(s_bbg_id)) then
 							Network.SendChat("[COLOR_Civ6Red]BBG Host version: "..tostring(GetLocalModVersion(s_bbg_id)).." Your version: "..tostring(player.bbg_v),-2,player.ID)
+							player.Status = 66
+						end
+						if b_bbm_game == true and tostring(player.bbm_v) ~= tostring(GetLocalModVersion(s_bbm_id)) then
+							Network.SendChat("[COLOR_Civ6Red]BBM Host version: "..tostring(GetLocalModVersion(s_bbm_id)).." Your version: "..tostring(player.bbm_v),-2,player.ID)
 							player.Status = 66
 						end
 						if player.Status == 66 then
@@ -7106,6 +7151,11 @@ function BuildAdditionalContent()
 			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: "..GetLocalModVersion(curMod.Id)..")";
 			b_bbg_game = true
 			s_bbg_id = curMod.Id
+		end
+		if curMod.Id == "c88cba8b-8311-4d35-90c3-51a4a5d66542" then
+			modTitleStr =  "[COLOR_LIGHTBLUE]".. modTitleStr .. "[ENDCOLOR] (local: "..GetLocalModVersion(curMod.Id)..")";
+			b_bbm_game = true
+			s_bbm_id = curMod.Id
 		end			
 		if(not curMod.Official) then
 			modTitleStr = ColorString_ModGreen .. modTitleStr .. "[ENDCOLOR]";
