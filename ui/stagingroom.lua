@@ -588,6 +588,7 @@ function RefreshStatusID(playerID,version,bbs_version,bbg_version)
 	local hostID = Network.GetGameHostPlayerID()
 	local versionBBS = GetLocalModVersion(s_bbs_id)
 	local versionBBG = GetLocalModVersion(s_bbg_id)
+	local versionBBM = GetLocalModVersion(s_bbm_id)
 	
 	if g_player_status ~= nil then
 		if version == nil then
@@ -712,6 +713,7 @@ function RefreshStatusID(playerID,version,bbs_version,bbg_version)
 						player.Version = tostring(version)	
 						player.bbg_v = tostring(bbg_version)	
 						player.bbs_v = tostring(bbs_version)	
+						player.bbm_v = tostring(bbm_version)
 						player.Name = PlayerConfigurations[playerID]:GetPlayerName()
 					end
 				end
@@ -729,6 +731,7 @@ function ResetStatus()
 	local hostID = Network.GetGameHostPlayerID()
 	local versionBBS = GetLocalModVersion(s_bbs_id)
 	local versionBBG = GetLocalModVersion(s_bbg_id)
+	local versionBBM = GetLocalModVersion(s_bbm_id)
 	g_player_status = {}
 	local player_ids = GameConfiguration.GetMultiplayerPlayerIDs();
 	for i, iPlayer in ipairs(player_ids) do
