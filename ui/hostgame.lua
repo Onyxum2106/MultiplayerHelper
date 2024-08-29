@@ -1047,6 +1047,13 @@ function CheckPreset()
 			PPLArena_Natural_Wonders()
 			PPLArena_CS()
 			GameConfiguration.SetValue("CITY_STATE_COUNT",3)
+		end
+		-- PPL Battleground
+		if currentPreset == 9 then
+			print("Applied PPL Battleground Settings")
+			PPLBattleground_Natural_Wonders()
+			PPLBattleground_CS()
+			GameConfiguration.SetValue("CITY_STATE_COUNT",6)
 		end			
 		Network.BroadcastGameConfig();	
 		OnUpdateUI()

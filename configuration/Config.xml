@@ -151,7 +151,7 @@
 		<Row Domain="MphPreset" Value="5" Name="MPH_PRESET_1v1RR_NAME" Description="MPH_PRESET_1v1RR_DESC" SortIndex="5"/>
 		<Row Domain="MphPreset" Value="6" Name="MPH_PRESET_CIVFRFFA_NAME" Description="MPH_PRESET_CIVFRFFA_DESC" SortIndex="6"/>
 		<Row Domain="MphPreset" Value="7" Name="MPH_PRESET_CHINESE_LEAGUE_CUP_NAME" Description="MPH_PRESET_CHINESE_LEAGUE_CUP_DESC" SortIndex="7"/>
-		<Row Domain="MphPreset" Value="8" Name="MPH_PRESET_PPL_ARENA_NAME" Description="MPH_PPL_ARENA_DESC" SortIndex="8"/>
+		<Row Domain="MphPreset" Value="8" Name="MPH_PRESET_PPL_ARENA_NAME" Description="MPH_PRESET_PPL_ARENA_DESC" SortIndex="8"/>
 		<Row Domain="MphPreset" Value="9" Name="MPH_PRESET_PPL_BATTLEGROUND_NAME" Description="MPH_PRESET_PPL_BATTLEGROUND_DESC" SortIndex="9"/>
 
 		<!-- Chinese League Cup -->
@@ -471,7 +471,7 @@
 		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="8" TargetGroup="Game" TargetId="GAME_MAX_TURNS" TargetValue="127"/>
 		<Row SourceGroup="Game" SourceId="CPL_SMARTTIMER" SourceValue="8" TargetGroup="Game" TargetId="CPL_SYNCTURN" TargetValue="1" />
 		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="8" TargetGroup="Game" TargetId="CPL_BAN_FORMAT" TargetValue="0" Hash="0"/>
-		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="8" TargetGroup="Game" TargetId="CPL_NO_PINS" TargetValue="1"/>
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="8" TargetGroup="Game" TargetId="CPL_NO_PINS" TargetValue="0"/>
 		<!--PPL BATTLEGROUND-->
 		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="9" TargetGroup="Game" TargetId="MPH_OFFICIAL_GAME" TargetValue="0" />
 		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="9" TargetGroup="Game" TargetId="PRIVATE_GAME" TargetValue="1" />
@@ -507,7 +507,7 @@
 		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="9" TargetGroup="Game" TargetId="GAME_MAX_TURNS" TargetValue="127"/>
 		<Row SourceGroup="Game" SourceId="CPL_SMARTTIMER" SourceValue="9" TargetGroup="Game" TargetId="CPL_SYNCTURN" TargetValue="1" />
 		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="9" TargetGroup="Game" TargetId="CPL_BAN_FORMAT" TargetValue="0" Hash="0"/>
-		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="9" TargetGroup="Game" TargetId="CPL_NO_PINS" TargetValue="1"/>
+		<Row SourceGroup="Game" SourceId="MPH_PRESET" SourceValue="9" TargetGroup="Game" TargetId="CPL_NO_PINS" TargetValue="0"/>
 	</ConfigurationUpdates>
 
 </GameInfo>
